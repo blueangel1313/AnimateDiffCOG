@@ -1,0 +1,12 @@
+build:
+  python_version: "3.8"
+  gpu: true  # set to true because PyTorch is being used
+  install:
+    - pip install torch==1.12.1 torchvision==0.13.1
+    - pip install diffusers[torch]==0.11.1
+    - pip install transformers==4.25.1
+    - pip install imageio==2.27.0
+    - pip install gdown
+    - pip install einops
+    - pip install omegaconf
+    - pip install safetensors
